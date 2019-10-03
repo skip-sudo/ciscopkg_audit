@@ -45,53 +45,14 @@ If optional arguments are not passed, all the devices defined in hosts file will
 
 (venv3-smuaudit) $ ./ciscopkg_audit.py D11_TB2_5508_PF -role edge 
 
+
 |      Router      |             Missing Package              |            Additional Package            |
 | ---------------- | -----------------------------------------| ---------------------------------------- |
 | D11_TB1_5508_PF  |                                          |                                          |
 |------------------|------------------------------------------|------------------------------------------|
 | D11_TB2_5508_PF  |                                          |                                          |
-|------------------|------------------------------------------|------------------------------------------+
-| D11_TB3_5508_PF  | ncs5500-dpa-                             | ncs5500-iosxr-                           |
-|                  | fwding-5.0.0.10-r653.CSCvo81436          | fwding-5.0.0.4-r6315.CSCvi05806          |
-|                  | ncs5500-mpls-2.1.0.0-r653                | ncs5500-k9sec-4.1.0.0-r6315              |
-|                  | ncs5500-xr-6.5.3 version=6.5.3 [Boot     | ncs5500-os-                              |
-| .                | image]                                   | support-4.0.0.1-r6315.CSCvi50726         |
-|                  | ncs5500-mpls-te-rsvp-3.1.0.0-r653        | ncs5500-infra-4.1.0.4-r6315.CSCvi54033   |
-|                  | ncs5500-dpa-3.0.0.5-r653.CSCvq45452      | ncs5500-common-pd-                       |
-|                  | ncs5500-infra-6.1.0.4-r653.CSCvo92663    | fib-1.1.0.1-r6315.CSCvi05806             |
-|                  | openssh-sshd-6.6p1.p1-r0.0.CSCvp70185.xr | ncs5500-iosxr-                           |
-|                  | ncs5500-mgbl-3.0.0.0-r653                | fwding-5.0.0.5-r6315.CSCvi30117          |
-|                  | ncs5500-os-                              | ncs5500-dpa-3.0.0.7-r6315.CSCvi11903     |
-|                  | support-6.0.0.2-r653.CSCvo92663          | ncs5500-infra-4.1.0.2-r6315.CSCvh78162   |
-|                  | ncs5500-k9sec-3.1.0.0-r653               | ncs5500-mgbl-4.0.0.1-r6315.CSCvi49879    |
-|                  | ncs5500-os-6.0.0.1-r653.CSCvo39192       | ncs5500-mpls-te-rsvp-2.2.0.0-r6315       |
-|                  | ncs5500-mpls-te-                         | ncs5500-dpa-3.0.0.6-r6315.CSCvi05806     |
-|                  | rsvp-3.1.0.2-r653.CSCvo94609             | ncs5500-xr-6.3.15 version=6.3.15 [Boot   |
-|                  | ncs5500-routing-4.0.0.3-r653.CSCvo77677  | image]                                   |
-|                  | ncs5500-isis-2.1.0.0-r653                | ncs5500-bgp-1.1.0.1-r6315.CSCvg26327     |
-|                  | ncs5500-k9sec-3.1.0.1-r653.CSCvn74595    | ncs5500-mpls-2.1.0.0-r6315               |
-|                  | ncs5500-bgp-2.0.0.1-r653.CSCvo93241      | ncs5500-iosxr-                           |
-|                  |                                          | fwding-5.0.0.2-r6315.CSCvh55277          |
-|                  |                                          | ncs5500-mgbl-4.0.0.0-r6315               |
-|                  |                                          | ncs5500-dpa-                             |
-|                  |                                          | fwding-4.1.0.4-r6315.CSCvi05806          |
-|                  |                                          | ncs5500-isis-1.3.0.0-r6315               |
-|                  |                                          | ncs5500-dpa-3.0.0.9-r6315.CSCvi21811     |
-|------------------|------------------------------------------|------------------------------------------|
-| D11_TB4_5508_PF  |                                          |                                          |
 |------------------|------------------------------------------|------------------------------------------|
 | D11_TB6_5508_PF  | ncs5500-dpa-                             | ncs5500-infra-6.1.0.1-r653.CSCvo13888    |
-|                  | fwding-5.0.0.10-r653.CSCvo81436          | ncs5500-dpa-                             |
-|                  | ncs5500-dpa-3.0.0.5-r653.CSCvq45452      | fwding-5.0.0.3-r653.CSCvp52569           |
-|                  | ncs5500-infra-6.1.0.4-r653.CSCvo92663    | ncs5500-routing-4.0.0.1-r653.CSCvp04860  |
-|                  | openssh-sshd-6.6p1.p1-r0.0.CSCvp70185.xr | ncs5500-mpls-te-                         |
-|                  | ncs5500-os-                              | rsvp-3.1.0.1-r653.CSCvp46117             |
-|                  | support-6.0.0.2-r653.CSCvo92663          | ncs5500-dpa-3.0.0.2-r653.CSCvp52569      |
-|                  | ncs5500-mpls-te-                         |                                          |
-|                  | rsvp-3.1.0.2-r653.CSCvo94609             |                                          |
-|                  | ncs5500-routing-4.0.0.3-r653.CSCvo77677  |                                          |
-|------------------|------------------------------------------|------------------------------------------|
-| D14_TB6_5501_sPF | ncs5500-dpa-                             | ncs5500-infra-6.1.0.1-r653.CSCvo13888    |
 |                  | fwding-5.0.0.10-r653.CSCvo81436          | ncs5500-dpa-                             |
 |                  | ncs5500-dpa-3.0.0.5-r653.CSCvq45452      | fwding-5.0.0.3-r653.CSCvp52569           |
 |                  | ncs5500-infra-6.1.0.4-r653.CSCvo92663    | ncs5500-routing-4.0.0.1-r653.CSCvp04860  |
