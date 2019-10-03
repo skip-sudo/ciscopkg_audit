@@ -43,32 +43,13 @@ If optional arguments are not passed, all the devices defined in hosts file will
 
 #### Output
 
-(venv3-smuaudit) $ ./ciscopkg_audit.py D11_TB2_5508_PF -role edge 
-
-
-|      Router      |             Missing Package              |            Additional Package            |
-| ---------------- | -----------------------------------------| ---------------------------------------- |
-| D11_TB1_5508_PF  |                                          |                                          |
-|------------------|------------------------------------------|------------------------------------------|
-| D11_TB2_5508_PF  |                                          |                                          |
-|------------------|------------------------------------------|------------------------------------------|
-| D11_TB6_5508_PF  | ncs5500-dpa-                             | ncs5500-infra-6.1.0.1-r653.CSCvo13888    |
-|                  | fwding-5.0.0.10-r653.CSCvo81436          | ncs5500-dpa-                             |
-|                  | ncs5500-dpa-3.0.0.5-r653.CSCvq45452      | fwding-5.0.0.3-r653.CSCvp52569           |
-|                  | ncs5500-infra-6.1.0.4-r653.CSCvo92663    | ncs5500-routing-4.0.0.1-r653.CSCvp04860  |
-|                  | openssh-sshd-6.6p1.p1-r0.0.CSCvp70185.xr | ncs5500-mpls-te-                         |
-|                  | ncs5500-os-                              | rsvp-3.1.0.1-r653.CSCvp46117             |
-|                  | support-6.0.0.2-r653.CSCvo92663          | ncs5500-dpa-3.0.0.2-r653.CSCvp52569      |
-|                  | ncs5500-mpls-te-                         |                                          |
-|                  | rsvp-3.1.0.2-r653.CSCvo94609             |                                          |
-|                  | ncs5500-routing-4.0.0.3-r653.CSCvo77677  |                                          |
-|--------------------------------------------------------------------------------------------------------|
-
-(venv3-smuaudit)$
+[Sample output](https://github.com/skip-sudo/ciscopkg_audit/blob/master/ciscopkg_audit_output.png)
 
 Output Legend: 
 
-Router - router name 
+Router - router name
+
 Missing Package - installed active package(s) in reference router but not active in current router 
+
 Additional Package - installed active package(s) in current router but not active in reference router
 
