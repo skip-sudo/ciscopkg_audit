@@ -1,0 +1,5 @@
+---
+ios_xr:
+    username: skip
+    password: skip123
+    platform: iosxr
