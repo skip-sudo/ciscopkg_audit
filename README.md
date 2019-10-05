@@ -39,12 +39,15 @@ There are three files used by Nornir at the basic level. One configuration file 
 
 ### Usage
 #### Run the script 
+```
+# ciscopkg_audit.py [-h] router_name [-role_name ROLE_NAME] [-tb_name TB_NAME]
 
-        ciscopkg_audit.py [-h] router_name [-role_name ROLE_NAME] [-tb_name TB_NAME]
+Arguments:
 
-        router_name - reference router name whose active packages will be used to compare against active packages of other routers 
-        role_name - role name assigned to the router (the key name 'role' or its value can be changed in hosts.yaml for a given device)
-        tb_name - testbed name assigned to the router (the key name 'tb' or its value can be changed in hosts.yaml for a given device)
+router_name - reference router name whose active packages will be used to compare against active packages of other routers 
+role_name - role name assigned to the router (the key name 'role' or its value can be changed in hosts.yaml for a given device)
+tb_name - testbed name assigned to the router (the key name 'tb' or its value can be changed in hosts.yaml for a given device)
+```
 
 If optional arguments are not passed, all the devices defined in hosts file will be compared against the reference router. Otherwise a filtered list of the inventory will be built based on the argument values of roles and testbed and the subset of devices will be used instead. 
 
