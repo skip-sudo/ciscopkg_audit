@@ -4,7 +4,7 @@ In an environment with multiple Cisco IOS-XR devices in one or more setup, the p
 
 This utility can be also used for devices running IOS XE or NX-OS by updating the platform field in groups.yaml to 'cisco_ios' and 'cisco_nxos' respectively.    
 
-It uses Nornir (a python based automation framework) to parallelize the information gathering from multiple devices and python to process and display the result in tabular format. 
+It uses Nornir (a python based automation framework) to parallelize the information gathering from multiple devices and python to process and display the result in tabular format. Sample output can found [here](https://github.com/skip-sudo/ciscopkg_audit/blob/master/ciscopkg_audit_output.png) 
 
 ### How to Use 
 #### Clone the repo 
@@ -24,7 +24,7 @@ Next install the required python packages
 pip install -r requirements.txt
 ```
 
-#### Uppdate the Nornir configuration and device files   
+#### Update the Nornir configuration and device files   
 There are three files used by Nornir at the basic level. One configuration file (config.yaml) and two inventory files (hosts.yaml and groups.yaml)
 
 * config.yaml - here we are specifying the number of threads to run in parallel. Adjust appropriately depending on the number of devices in the setup
@@ -53,3 +53,6 @@ Missing Package - installed active package(s) in reference router but not active
 
 Additional Package - installed active package(s) in current router but not active in reference router
 
+### Credits and references
+
+[Nornir](https://nornir.readthedocs.io/en/stable/index.html)
