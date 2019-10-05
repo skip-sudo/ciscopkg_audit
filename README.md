@@ -63,6 +63,8 @@ Missing Package - installed active package(s) in reference router but not active
 
 Additional Package - installed active package(s) in current router but not active in reference router
 
+If the package line up of the given router matches exactly with reference router, both Missing Package and Aditional Package cell will be blank
+
 ### Use case example 
 1) 5 setup (testbed) with 10 IOS-XR devices in each setup (total 50 devices)
 2) Each device belongs to a role (edge role, lsr role, etc). The IOS-XR packages installed are based on a role
