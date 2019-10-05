@@ -68,7 +68,7 @@ If the package line up of the given router matches exactly with reference router
 ### Use case example 
 1) 5 setup (testbed) with 10 IOS-XR devices in each setup (total 50 devices)
 2) Each device belongs to a role (edge role, lsr role, etc). The IOS-XR packages installed are based on a role
-3) In inventory file (hosts.yaml), create a custom data variable "tb" to identify the testbed and variable "role" to identify the appropriate role the device belongs
+3) In inventory file (hosts.yaml), custom data variable "tb" is used to identify the testbed and variable "role" is used to identify the appropriate role the device belongs to
 4) Now we can use the utility for the following use cases 
    - compare package list of all routers in a given role in a specific testbed compared to reference router 
      - use -role <> and -tb <> argument
