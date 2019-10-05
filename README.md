@@ -6,7 +6,7 @@ This utility can be also used for devices running IOS XE or NX-OS by updating th
 
 It uses Nornir (a python based automation framework) to parallelize the information gathering from multiple devices and python to process and display the result in tabular format. Sample output can found [here](https://github.com/skip-sudo/ciscopkg_audit/blob/master/ciscopkg_audit_output.png) 
 
-Why use Nornir? Its highly scalable by processing each device in a separate thread and uses a templatized and flexible inventory management scheme to accommodate any use case. This utility illustrates the use case to audit installed packages on Cisco devices. 
+Why use Nornir? Its highly scalable by processing each device in a separate thread and uses a templatized and flexible inventory management scheme to accommodate any use case as illustrated by this utility. 
 
 ### Pre-requisite 
 A Linux, Mac or Windows environment (laptop, desktop or server including VM or container) with python 3.7 installed. This will work on other python versions as well as long as the required set of python packages are installed. 
@@ -73,7 +73,7 @@ Additional Package - installed active package(s) in current router but not activ
    - compare package list of all routers across all roles and testbeds compared to reference router 
      - leave out both optional arguments 
 
-A quick benchmarking of running this utility for the above use case on 50 physical devices in 5 testbeds, produced the desired output for all devices in less than 12 seconds.    
+A quick benchmarking of running this utility for the above use case on 50 physical devices in 5 testbeds, produced the desired output from all devices in approximately 12 seconds.    
 
 ### Credits and references
 
