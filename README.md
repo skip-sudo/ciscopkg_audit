@@ -37,8 +37,9 @@ There are three files used by Nornir at the basic level. One configuration file 
 * hosts.yaml - in this file we define the router hostname, their IP address, ports, groups they belong to and any arbitrary data in key:value format. We are using role and testbed as an example to show the logical grouping. Update as appropriate. 
 * groups.yaml - the groups referenced by the devices. Since username, password, platform will be common to the devices, it makes sense to keep them in group. 
 
+### Usage
 #### Run the script 
-##### Usage: 
+
         ciscopkg_audit.py [-h] router_name [-role_name ROLE_NAME] [-tb_name TB_NAME]
 
         router_name - reference router name whose active packages will be used to compare against active packages of other routers 
