@@ -6,7 +6,7 @@ This utility can be also used for devices running IOS XE or NX-OS by updating th
 
 It uses Nornir (a python based automation framework) to parallelize the information gathering from multiple devices and python to process and display the result in tabular format. Sample output can found [here](https://github.com/skip-sudo/ciscopkg_audit/blob/master/ciscopkg_audit_output.png) 
 
-Why use Nornir? Its highly scalable by processing each device in a separate thread and uses a templatized and flexible inventory management scheme to accommodate any use case. 
+Why use Nornir? Its highly scalable by processing each device in a separate thread and uses a templatized and flexible inventory management scheme to accommodate any use case. This utility illustrates the use case to audit installed packages on Cisco devices. 
 
 ### Pre-requisite 
 A Linux, Mac or Windows environment (laptop, desktop or server including VM or container) with python 3.7 installed. This will work on other python versions as well as long as the required set of python packages are installed. 
@@ -64,7 +64,16 @@ Additional Package - installed active package(s) in current router but not activ
 2) Each device belongs to a role (edge role, lsr role, etc). The IOS-XR packages installed are based on a role
 3) In inventory file (hosts.yaml), create a custom data variable "tb" to identify the testbed and variable "role" to identify the appropriate role the device belongs
 4) Now we can use the utility for the following use cases 
+   - compare package list of all routers in a given role in a specific testbed compared to reference router 
+     - use -role <> and -tb <> argument
+   - compare package list of all routers in a given role across all testbeds compared to reference router 
+     - use -role <> argument (leave out -tb argument)
+   - compare package list of all routers in a given testbed across all roles compared to reference router
+     - use =tb <> argument (leave out -role argument)
+   - compare package list of all routers across all roles and testbeds compared to reference router 
+     - leave out both optional arguments 
 
+A quick benchmarking of running this utility for the above use case on 50 physical devices in 5 testbeds, produced the desired output for all devices in less than 12 seconds.    
 
 ### Credits and references
 
