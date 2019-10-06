@@ -34,7 +34,7 @@ pip install -r requirements.txt
 There are three files used by Nornir at the basic level. One configuration file (config.yaml) and two inventory files (hosts.yaml and groups.yaml)
 
 * config.yaml - here we are specifying the number of threads to run in parallel. Adjust appropriately depending on the number of devices in the setup
-* hosts.yaml - in this file we define the router hostname, their IP address, ports, groups they belong to and any arbitrary data in key:value format. We are using role and testbed as an example to show the logical grouping. Update as appropriate. 
+* hosts.yaml - in this file we define the router hostname, their IP address, ports, groups they belong to and any arbitrary data in key:value format. We are using role and testbed to show the logical grouping for this use utility. Update as appropriate. 
 * groups.yaml - the groups referenced by the devices. Since username, password, platform will be common to the devices, it makes sense to keep them in group. 
 
 ### Usage
