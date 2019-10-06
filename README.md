@@ -44,8 +44,10 @@ There are three files used by Nornir at the basic level. One configuration file 
 ```
 Arguments:
 
-router_name - reference router name whose active packages will be used to compare against active packages of other routers (mandatory argument) 
+router_name - reference router name whose active packages will be used to compare against active packages of other routers (mandatory argument)
+
 role_name - filter on role name assigned to the routers in inventory file (optional argument)
+
 tb_name - filter on testbed name assigned to the routers in inventory file (optional argument)
 
 If optional arguments are not passed, all the devices defined in hosts file will be compared against the reference router. Otherwise a filtered list of the inventory will be built based on the argument values of roles and testbed and the subset of devices will be used instead. 
