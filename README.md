@@ -12,12 +12,6 @@ Why use Nornir? Its highly scalable by processing each device in a separate thre
 A Linux, Mac or Windows environment (laptop, desktop or server including VM or container) with python 3.7 installed. This will work on other python versions as well as long as the required set of python packages are installed. 
 
 ### Installation 
-#### Clone the repo 
-```
-git clone https://github.com/skip-sudo/ciscopkg_audit
-cd ciscopkg_audit 
-```
-
 #### Install Python packages 
 First create a python virtual environment. It is not a hard requirement but recommended.
 ```
@@ -27,6 +21,11 @@ source venv3-ciscopkag/bin/activate
 Next install the required python packages 
 ```
 pip install -r requirements.txt
+```
+#### Clone the repo 
+```
+git clone https://github.com/skip-sudo/ciscopkg_audit
+cd ciscopkg_audit 
 ```
 
 ### Configuration
