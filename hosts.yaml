@@ -1,4 +1,40 @@
 ---
+ASR1K-1:
+  hostname: 10.1.4.8
+  port: 22
+  groups:
+    - ios_xe
+  data:  
+    role: edge
+    tb: tb1
+
+ASR1K-2:
+  hostname: 10.1.4.9
+  port: 22
+  groups:
+    - ios_xe
+  data:  
+    role: edge
+    tb: tb1
+
+CORE_N9500-1:
+  hostname: 172.3.2.18
+  port: 22
+  groups:
+    - nxos
+  data:  
+    role: core
+    tb: tb1
+
+CORE_N9500-2:
+  hostname: 172.3.2.19
+  port: 22
+  groups:
+    - nxos
+  data:  
+    role: core
+    tb: tb1
+
 D1:
   hostname: 10.25.52.10
   port: 22
