@@ -7,15 +7,15 @@ ios_xr:
         cmd: 'show install active summary'
 
 ios_xe:
-    username: admin
-    password: C1sco123
+    username: skip
+    password: skip123
     platform: cisco_xe
     data:
         cmd: 'show install active'
 
 nxos:
-    username: admin
-    password: cisco.123
+    username: skip
+    password: skip123
     platform: cisco_nxos
     data:
         cmd: 'show install active'
