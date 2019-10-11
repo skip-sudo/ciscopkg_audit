@@ -2,7 +2,7 @@
 
 In an environment with multiple Cisco IOS-XR devices in one or more setup, it may be necessary to have the same package line up in all or a group of devices. This utility helps to identify the devices and their packages that are not in sync with the packages installed on reference device and displays the diff.
 
-This utility can be also used for devices running IOS XE or NX-OS by updating the platform field in groups.yaml to 'cisco_ios' and 'cisco_nxos' respectively.    
+This utility can be also used for devices running IOS XE or NX-OS by updating the platform field in groups.yaml to 'cisco_xe' and 'cisco_nxos' respectively.    
 
 It uses Nornir (a python based automation framework) to parallelize the information gathering from multiple devices and python to process and display the result in tabular format. Sample output can found [here](https://github.com/skip-sudo/ciscopkg_audit/blob/master/ciscopkg_audit_output.png) 
 
