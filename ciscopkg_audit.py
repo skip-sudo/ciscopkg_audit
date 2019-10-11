@@ -70,6 +70,12 @@ def main():
         print('ERROR: Router name', args.router_name, 'not defined in hosts file')
         sys.exit(0)
 
+    # get group name of reference router 
+    ref_rtr_group = nr.inventory.hosts[ref_rtr].groups[0]
+
+    # get command line for ref rtr group 
+    cmd_line = nr.inventory.groups[ref_rtr_group].data['cmd']
+
     # filter hosts based on optional args 
     filtered_host = nr # initialize filtered_host to initialized Nornir object
     if args.role_name:
@@ -86,7 +92,7 @@ def main():
     # get output of active packages installed on filtered devices 
     result = filtered_host.run(
         task=netmiko_send_command,
-        command_string="show install active summary"
+        command_string=cmd_line
     )
 
     # create master list of active packages from reference router
