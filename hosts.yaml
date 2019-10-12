@@ -59,7 +59,7 @@ D10:
   groups:
     - ios_xr
   data:  
-    role: edge
+    role: ler
     tb: tb2
 
 D11:  	 
@@ -68,7 +68,7 @@ D11:
   groups:
     - ios_xr
   data:  
-    role: edge
+    role: ler
     tb: tb2
 
 D12:
@@ -77,6 +77,6 @@ D12:
   groups:
     - ios_xr
   data:  
-    role: edge
+    role: ler
     tb: tb2
 
